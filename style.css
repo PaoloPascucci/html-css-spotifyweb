@@ -3,3 +3,64 @@
     margin: 0;
     padding: 0;
 }
+
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.debug>#site_header {
+    height: 100px;
+}
+
+.debug .logo {
+    background-color: aqua;
+    width: 24%;
+    height: 100px;
+    display: inline-block;
+}
+
+.debug .menu {
+    background-color: brown;
+    width: 50%;
+    height: 100px;
+    display: inline-block;
+}
+
+.debug .selected {
+    background-color: chartreuse;
+    width: 25%;
+    height: 100px;
+    display: inline-block;
+}
+
+.debug #site_main {
+    background-color: crimson;
+    height: 600px;
+}
+
+.debug #site_footer {
+    height: 100px;
+}
+
+.debug .Sx {
+    width: 24%;
+    background-color: darkmagenta;
+    height: 100px;
+    display: inline-block;
+}
+
+.debug .Dx {
+    width: 25%;
+    background-color: darkgrey;
+    height: 100px;
+    display: inline-block;
+}
+
+.debug .center {
+    width: 50%;
+    background-color: darkgreen;
+    height: 100px;
+    display: inline-block;
+}
