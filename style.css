@@ -191,3 +191,40 @@ hr {
 /***********
 *Footer*
 ************/
+
+.site_footer {
+    background-color: #282828;
+    display: inline-block;
+    width: 100%;
+}
+
+.text {
+    float: left;
+    margin-top: 5rem;
+}
+
+.Sx .imagine {
+    float: left;
+    margin: 3rem 1rem
+}
+
+.imagine img {
+    height: 100px;
+}
+
+.Sx h3 {
+    float: left;
+    color: white;
+}
+
+.Sx p {
+    color: #a3a3a3;
+}
+
+.Sx i {
+    float: left;
+    margin-top: 5rem;
+    padding: 1rem;
+    font-size: 20px;
+    color: #a3a3a3;
+}
