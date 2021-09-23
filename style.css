@@ -12,6 +12,7 @@
 
 body {
     height: 100vh;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*Debug*/
@@ -74,8 +75,9 @@ body {
 /*******/
 
 .fas {
-    font-size: 15px;
-    color: #d2d2d2;
+    vertical-align: middle;
+    height: 2rem;
+    color: #a3a3a3;
 }
 
 /*************
@@ -88,7 +90,7 @@ body {
 
 .site_header {
     width: 12%;
-    justify-content: flex-start space-between;
+    justify-content: flex-start;
     flex-direction: column;
     background-color: #000000;
     padding: 1rem;
@@ -104,7 +106,7 @@ body {
 }
 
 .menu span {
-    color: white;
+    color: #a3a3a3;
 }
 
 .home {
@@ -118,3 +120,74 @@ body {
 .home span, .research span, .library span {
     padding-left: 5px;
 }
+
+h2 {
+    margin-top: 1rem;
+    color: white;
+    font-size: 15px;
+}
+
+.square {
+    display: inline-block;
+    vertical-align: sub;
+    margin: 1rem 0;
+    height: 30px;
+    width: 30px;
+    background-color: #a3a3a3;
+}
+
+.fa-plus {
+    margin: 6px;
+    font-size: 20px;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    line-height: 35px;
+    color: #a3a3a3
+}
+
+.null {
+    margin: 5rem;
+    padding: 2rem;
+}
+
+.selected .download {
+    vertical-align: middle;
+    height: 15px;
+    color: #a3a3a3;
+}
+
+.selected.install {
+    color: #a3a3a3;
+}
+
+hr {
+    border: 1px solid #a3a3a3
+}
+
+.creator {
+    margin-top: 1rem;
+}
+
+.selected .profile {
+    vertical-align: middle;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #a3a3a3;
+}
+
+.selected .name {
+    color: white;
+    font-weight: 900;
+}
+
+/************/
+
+/***********
+*Footer*
+************/
