@@ -194,6 +194,23 @@ hr {
 
 .site_main {
     height: calc(100vh - 150px);
+    width: -webkit-fill-available;
+}
+
+.upgrade {
+    width: 100%;
+    background-color: #080b12;
+    height: 60px;
+}
+
+.upgrade a {
+    color: white;
+    border: 1px solid white;
+    background-color: #080b12;
+    border-radius: 10%/50%;
+    padding: .5rem 4rem;
+    margin: .5rem 1rem 0 0;
+    float: right;
 }
 
 /***********/
