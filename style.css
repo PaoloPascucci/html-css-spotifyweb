@@ -152,7 +152,7 @@ li {
 }
 
 .null {
-    margin: 5rem;
+    margin: 2.5rem;
     padding: 2rem;
 }
 
@@ -188,19 +188,38 @@ hr {
 
 /************/
 
+/**********
+*Main*
+************/
+
+.site_main {
+    height: calc(100vh - 150px);
+}
+
+/***********/
+
 /***********
 *Footer*
 ************/
 
 .site_footer {
     background-color: #282828;
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
+    bottom: 0;
+    position: fixed;
+    flex-direction: row;
+    height: 150px;
 }
 
 .text {
     float: left;
-    margin-top: 5rem;
+    margin-top: 4rem;
+}
+
+.Sx {
+    width: 20%;
 }
 
 .Sx .imagine {
@@ -209,7 +228,7 @@ hr {
 }
 
 .imagine img {
-    height: 100px;
+    height: 80px;
 }
 
 .Sx h3 {
@@ -223,8 +242,67 @@ hr {
 
 .Sx i {
     float: left;
-    margin-top: 5rem;
-    padding: 1rem;
+    margin-top: 4rem;
+    padding-left: 2rem;
     font-size: 20px;
     color: #a3a3a3;
+}
+
+.center {
+    width: 65%;
+    text-align: center;
+}
+
+.music span {
+    color: white;
+}
+
+.icons {
+    display: inline-block;
+    margin: 2rem 0 1rem 0;
+}
+
+.time {
+    margin: 0 .5rem;
+    height: 5px;
+    background-color: #a3a3a3;
+    border-radius: 1%/50%;
+    width: 30%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icons .fas, .icons .far {
+    font-size: 30px;
+    padding: 9px;
+    color: white;
+}
+
+.fa-play-circle {
+    vertical-align: top;
+}
+
+.Dx {
+    width: 15%;
+}
+
+.icons2 {
+    display: inline-block;
+    margin: 2rem 0 1rem 0;
+}
+
+.icons2 .fas {
+    font-size: 15px;
+    padding: 5px;
+    color: white;
+}
+
+.volume {
+    margin: 2rem 0;
+    height: 5px;
+    background-color: #a3a3a3;
+    border-radius: 1%/50%;
+    width: 35%;
+    display: inline-block;
+    vertical-align: bottom;
 }
