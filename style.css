@@ -13,6 +13,7 @@
 body {
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
+    position: relative;
 }
 
 /*Debug*/
@@ -94,6 +95,8 @@ body {
     flex-direction: column;
     background-color: #000000;
     padding: 1rem;
+    position: fixed;
+    z-index: 1;
 }
 
 .logo {
@@ -198,19 +201,21 @@ hr {
 ************/
 
 .site_main {
-    height: calc(100vh - 150px);
+    height: calc(190vh - 150px);
     width: -webkit-fill-available;
     background-color: #141922;
 }
 
 .container {
-    display: contents;
+    display: inline-block;
+    margin-left: 12rem;
 }
 
 .upgrade {
-    width: 100%;
+    width: 90%;
     background-color: #080b12;
     height: 60px;
+    position: fixed;
 }
 
 .upgrade a {
@@ -244,14 +249,18 @@ nav li {
     border-bottom: lime 1px solid;
 }
 
+.Brani {
+    overflow-y: auto;
+}
+
 .song {
     width: 100%;
-    height: 53%;
-    margin: 0 10rem 0 0
+    height: 450px;
+    margin: 0 10rem 0 0;
 }
 
 .song h2 {
-    margin: 2rem;
+    margin: 2rem 3rem;
     font-size: 30px;
 }
 
@@ -282,20 +291,33 @@ nav li {
 
 .song2 {
     width: 100%;
-    height: 50%;
+    height: 375px;
+    margin-left: 3rem;
 }
 
-.song2 h2 {
-    margin: 2rem;
+.song2 img {
+    height: 200px;
+    width: 200px;
+}
+
+.song2 h2, .song3 h2 {
+    margin: 2rem 0;
     font-size: 30px;
 }
 
-.subtitle2 {
-    margin-left: 2rem;
+.subtitle2, .subtitle3 {
+    margin: 1rem 0;
+    color: #66696e;
 }
 
-.subtitle2 {
-    color: #66696e;
+.song3 {
+    margin: 7rem 0 0 3rem;
+}
+
+.song3 img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
 }
 
 /***********/
@@ -313,6 +335,7 @@ nav li {
     position: fixed;
     flex-direction: row;
     height: 150px;
+    z-index: 5;
 }
 
 .text {
