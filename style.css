@@ -223,13 +223,18 @@ hr {
     border: 1px solid white;
     background-color: #080b12;
     border-radius: 10%/50%;
-    padding: .5rem 4rem;
+    padding: .5rem 3rem;
     margin: .5rem 1rem 0 0;
     float: right;
+    text-decoration: none;
+}
+
+.nav {
+    padding-top: 3rem;
 }
 
 nav a {
-    color: white;
+    color: #5a5a5a;
     text-decoration: none;
     display: inline-block;
     font-weight: 900;
@@ -255,8 +260,8 @@ nav li {
 
 .song {
     width: 100%;
-    height: 450px;
-    margin: 0 10rem 0 0;
+    height: 475px;
+    margin: 0 11rem 0 0;
 }
 
 .song h2 {
@@ -265,17 +270,67 @@ nav li {
 }
 
 .content {
-    margin: 3rem 0;
-    padding: 1rem;
-    width: 16%;
+    margin: 3rem 3rem;
+    padding: 1rem 0;
+    width: 10%;
     float: left;
+    position: relative;
 }
 
-.content img {
-    margin-left: 2.5rem;
-    text-align: center;
-    height: 150px;
-    width: 150px;
+.image img {
+    height: 180px;
+    width: 180px;
+}
+
+.play_grande {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000c7;
+    width: 180px;
+    height: 180px;
+    margin: -0.2rem .3rem;
+    visibility: hidden;
+}
+
+.play_grande2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000c7;
+    width: 180px;
+    height: 180px;
+    margin: -0.2rem .3rem;
+    visibility: hidden;
+}
+
+.play_grande3 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    background-color: #000000c7;
+    width: 180px;
+    height: 180px;
+    margin: -0.2rem .3rem;
+    visibility: hidden;
 }
 
 .name {
@@ -296,6 +351,7 @@ nav li {
 }
 
 .song2 img {
+    margin-left: 20px;
     height: 200px;
     width: 200px;
 }
@@ -315,9 +371,14 @@ nav li {
 }
 
 .song3 img {
+    margin-left: 20px;
     border-radius: 50%;
     height: 200px;
     width: 200px;
+}
+
+.song3 .name {
+    text-align: center;
 }
 
 /***********/
@@ -390,20 +451,54 @@ nav li {
 .time {
     margin: 0 .5rem;
     height: 5px;
-    background-color: #a3a3a3;
+    background-color: #5a5a5a;
     border-radius: 1%/50%;
     width: 30%;
     display: inline-block;
     vertical-align: middle;
+    position: relative;
+}
+
+.Control {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+.Control2 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+.time2 {
+    height: 5px;
+    background-color: #a3a3a3;
+    border-radius: 1%/50%;
+    width: 30%;
+    vertical-align: middle;
 }
 
 .icons .fas, .icons .far {
-    font-size: 30px;
+    font-size: 25px;
     padding: 9px;
     color: white;
 }
 
 .fa-play-circle {
+    font-size: 35px;
     vertical-align: top;
 }
 
@@ -426,9 +521,94 @@ nav li {
 .volume {
     margin: 2rem 0;
     height: 5px;
-    background-color: #a3a3a3;
+    background-color: #5a5a5a;
     border-radius: 1%/50%;
     width: 35%;
     display: inline-block;
     vertical-align: bottom;
+    position: relative;
+}
+
+.volume2 {
+    height: 5px;
+    background-color: #a3a3a3;
+    border-radius: 1%/50%;
+    width: 35%;
+    vertical-align: bottom;
+}
+
+/************/
+
+/*Responsive*/
+
+nav a:hover {
+    color: white;
+}
+
+.home span:hover {
+    color: white;
+}
+
+.research span:hover {
+    color: white;
+}
+
+.library span:hover {
+    color: white;
+}
+
+.install:hover {
+    color: white
+}
+
+.playlist span:hover {
+    color: white;
+}
+
+.playlist li:hover {
+    color: white;
+}
+
+.upgrade a:hover {
+    padding: .7rem 4rem;
+}
+
+.content:hover .play_grande {
+    visibility: visible;
+}
+
+.content:hover .play_grande2 {
+    visibility: visible;
+}
+
+.content:hover .play_grande3 {
+    visibility: visible;
+}
+
+.text p:hover {
+    text-decoration: underline;
+}
+
+.fa-heart:hover, .fa-folder:hover {
+    color: white;
+}
+
+.icons .fa-play-circle:hover {
+    font-size: 35px;
+}
+
+.time:hover .time2 {
+    background-color: lightgreen;
+}
+
+.time:hover .Control {
+    visibility: visible;
+}
+
+.volume:hover .volume2 {
+    background-color: lightgreen;
+}
+
+.volume:hover .Control2 {
+    visibility: visible;
 }
