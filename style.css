@@ -618,6 +618,9 @@ nav a:hover {
 /*****MQ*****/
 
 @media screen and (max-width:1440px) {
+    body {
+        flex-shrink: 1;
+    }
     .logo {
         padding: 1rem 0;
     }
@@ -642,5 +645,73 @@ nav a:hover {
     }
     .Sx i {
         padding-left: 1rem;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .logo {
+        padding: 1rem 0;
+    }
+    .logo img {
+        height: 25px;
+    }
+    .menu img {
+        height: 25px;
+    }
+    .menu span, li {
+        font-size: 10px;
+    }
+    .square, .fa-plus {
+        height: 20px;
+        width: 20px;
+    }
+    .fa-plus {
+        font-size: 15px;
+        margin: 3px;
+    }
+    .nav {
+        width: 70%;
+    }
+    .content {
+        width: 20%;
+        height: 50%;
+        flex-shrink: 1;
+    }
+    .song {
+        width: 55%;
+    }
+    .song, .song2, .song3 {
+        padding-left: 120px;
+    }
+    .song {
+        height: 660px;
+    }
+    .song2 {
+        padding-top: 3rem;
+    }
+    .song2 .name {
+        width: 60%;
+        text-align: center;
+    }
+    .song3 {
+        padding-top: 3rem;
+    }
+    .play_grande2 {
+        top: 32.5%;
+        left: 68%;
+    }
+    .play_grande, .play_grande3 {
+        top: 32.5%;
+        left: 68%;
+    }
+    .Sx i {
+        font-size: 11px;
+        padding-left: 5px;
+    }
+    .Sx h3, .Sx p {
+        font-size: 12px;
+    }
+    .Sx img {
+        height: 50px;
     }
 }
