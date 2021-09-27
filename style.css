@@ -618,9 +618,6 @@ nav a:hover {
 /*****MQ*****/
 
 @media screen and (max-width:1440px) {
-    body {
-        flex-shrink: 1;
-    }
     .logo {
         padding: 1rem 0;
     }
